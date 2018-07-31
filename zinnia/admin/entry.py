@@ -51,7 +51,7 @@ class EntryAdmin(admin.ModelAdmin):
             'fields': ('content_template', 'detail_template'),
             'classes': ('collapse', 'collapse-closed')}),
         (_('Metadatas'), {
-            'fields': ('featured', 'excerpt', 'authors', 'related'),
+            'fields': ('featured', 'excerpt', 'authors', 'related', 'canonical_link'),
             'classes': ('collapse', 'collapse-closed')}),
         (None, {'fields': ('categories', 'tags', 'slug')}))
     list_filter = (CategoryListFilter, AuthorListFilter,
